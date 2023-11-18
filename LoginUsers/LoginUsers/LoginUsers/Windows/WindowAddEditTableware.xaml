@@ -1,0 +1,46 @@
+﻿<Window x:Class="LoginUsers.Windows.WindowAddEditTableware"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginUsers.Windows"
+        mc:Ignorable="d"
+        Title="Добавление и редактирование товаров" Height="500" Width="922">
+    <Grid>
+        <Label Content='Товары' HorizontalAlignment="Center" FontSize="30" FontWeight="Bold"/>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Width="300" Height="386" Margin="10,0,50,0">
+                <Label Content="Артикул" Margin="0,0,0,10"/>
+                <TextBox x:Name="tbArticul" Height="25"/>
+                <Label Content="Наименование" Margin="0,0,0,10"/>
+                <TextBox x:Name="tbName" Height="25"/>
+                <Label Content="Единицы" Margin="0,0,0,10"/>
+                <TextBox x:Name="tbUnit" Height="25"/>
+                <Label Content="Стоимость" Margin="0,0,0,10"/>
+                <TextBox x:Name="tbCost" Height="25"/>
+                <Label Content="Размер макс скидки" Margin="0,0,0,10"/>
+                <TextBox x:Name="tbMaxSale" Height="26"/>
+                <Label Content="Производитель" Margin="0,0,0,10"/>
+                <TextBox x:Name="tbManufacturer" Height="25"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="300" Height="386">
+                <Label Content="Поставщик" Margin="0,0,0,10"/>
+                <TextBox x:Name="tbSupplier" Height="25"/>
+                <Label Content="Категория товара" Margin="0,0,0,10"/>
+                <TextBox x:Name="tbCategory" Height="25"/>
+                <Label Content="Действующая скидка" Margin="0,0,0,10"/>
+                <TextBox x:Name="tbCurrentSale" Height="25"/>
+                <Label Content="Количество" Margin="0,0,0,10"/>
+                <TextBox x:Name="tbCount" Height="25"/>
+                <Label Content="Описание" Margin="0,0,0,10"/>
+                <TextBox x:Name="tbDescription" Height="25"/>
+                <Label Content="Изображение" Margin="0,0,0,10"/>
+                <TextBox x:Name="tbImage" Height="25"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="211" Height="336"  Margin="10,0,50,0">
+                <Button x:Name="btnSaveProduct" Content="Сохранить" Click="btnSaveProduct_Click" Margin="0,10,0,10" Height="26"/>
+                <Button x:Name="btnCancelProduct" Content="Отменить" Click="btnCancelProduct_Click" Height="26"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
